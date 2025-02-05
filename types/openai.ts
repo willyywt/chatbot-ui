@@ -13,6 +13,7 @@ export enum OpenAIModelID {
 }
 
 // in case the `DEFAULT_MODEL` environment variable is not set or set to an unsupported model
+// FIXME: check whether DEFAULT_MODEL correctly overrides this if set
 export const fallbackModelID = OpenAIModelID.GPT_4O_MINI;
 
 export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
